@@ -16,3 +16,15 @@ out body;
 );
 out body;
 >;
+
+// Germany
+[out:json][timeout:60];
+{{geocodeArea:"Deutschland"}}->.a;
+(
+  node["population"]["place"](if:(t["population"]<"1000" &&
+  t["population"]>"20"))(area.a);
+  
+);
+out body;
+>;
+
