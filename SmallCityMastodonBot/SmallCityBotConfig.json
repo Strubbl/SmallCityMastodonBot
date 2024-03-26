@@ -1,9 +1,9 @@
 {
   "botInfo": [
     {
-      "botUrl": "@SmallTownUSA@en.osm.town",
+      "botUrl": "@kleinesDorf@en.osm.town",
       "botDomain": "en.osm.town",
-      "botName": "UnmappedSmallTownUSA",
+      "botName": "UnmappedSmallTownGermany",
       "townFile": "townsList.json",
       "overpassQuery": [
         {
@@ -11,41 +11,14 @@
           "queryType": "count",
           "countMaximum": "10",
           "radiusInMeters": "800",
-          "message": "Building count"
-        },
-        {
-          "featureTag": "tiger:reviewed",
-          "queryType": "count",
-          "countMaximum": "-1",
-          "radiusInMeters": "800",
-          "message": "Roads to review"
+          "message": "Gebäudeanzahl"
         }
       ],
       "postText": {
-        "greetingText": "seems like it could use some mapping!",
-        "populationText": "Population",
-        "mapLinkText": "Map link"
+        "greetingText": "sieht aus, als könnte es etwas Mapping vertragen!",
+        "populationText": "Einwohner",
+        "mapLinkText": "Map-Link"
       }
-    },
-    /*{
-      "botUrl": "@PetiteVilleFrance@en.osm.town",
-      "botDomain": "en.osm.town",
-      "botName": "UnmappedSmallTownUSA",
-      "townFile": "townsList_France.json",
-      "overpassQuery": [
-        {
-          "featureTag": "building",
-          "queryType": "count",
-          "countMaximum": "10",
-          "radiusInMeters": "800",
-          "message": "Nombre de b�timents"
-        },
-      ],
-      "postText": {
-        "greetingText": "semble qu'il pourrait utiliser une cartographie!",
-        "populationText": "Population",
-        "mapLinkText": "Lien carte"
-      }
-    }*/
+    }
   ]
 }
